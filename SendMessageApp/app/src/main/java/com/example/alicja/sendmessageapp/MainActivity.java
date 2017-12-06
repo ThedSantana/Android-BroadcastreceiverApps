@@ -25,7 +25,8 @@ public class MainActivity extends AppCompatActivity {
         String messageText = messageToSend.getText().toString();
         messageIntent.putExtra("messageText", messageText);
 
-        sendBroadcast(messageIntent);
+        String permission = Manifest.permission.MY_PERMISSION;
+        sendBroadcast(messageIntent, permission);
 
     }
 }

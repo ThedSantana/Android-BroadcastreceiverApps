@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.alicja.sendmessageapp">
 
+    <uses-permission android:name="com.example.alicja.sendmessageapp.my_permissions.MY_PERMISSION"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -17,5 +19,13 @@
             </intent-filter>
         </activity>
     </application>
+    
+    <permission-group android:name="com.example.alicja.sendmessageapp.my_permissions"
+        android:label="my permissions group"/>
+    
+    <permission android:name="com.example.alicja.sendmessageapp.my_permissions.MY_PERMISSION"
+        android:permissionGroup="com.example.alicja.sendmessageapp.my_permissions"
+        android:label="my permission"/>
+
 
 </manifest>
