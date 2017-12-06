@@ -26,7 +26,7 @@ public class MyBroadcastReceiver extends BroadcastReceiver {
 
         Notification.Builder mBuilder =
                 new Notification.Builder(context)
-                        .setSmallIcon(R.drawable.ic_action_name)
+                        .setSmallIcon(R.drawable.ic_chat_bubble_outline_black_24dp)
                         .setContentTitle(NOTIFICATION_TITLE)
                         .setContentText(message);
         mBuilder.setContentIntent(contentIntent);
